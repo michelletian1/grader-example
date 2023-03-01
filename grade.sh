@@ -16,7 +16,7 @@ fi
 cd ../
 
 cp student-submission/ListExamples.java ./
-javac -cp $CPATH *.java
+javac -cp $CPATH *.java 2> error-trace.txt
 
 if [[ $? -ne 0 ]]
 then
